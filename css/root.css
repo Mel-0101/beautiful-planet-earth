@@ -1,0 +1,26 @@
+:root {
+    --primary: #6fca19;
+    --secondary: #83ef1d;
+    --light: #fefefe;
+    --light-transparent: rgba(255, 255, 255, 0.70);
+    --grey: #424242;
+    --grey-transparent: rgba(255, 255, 255, 0.10);
+    --dark: #121d22;
+    --dark-transparent: rgba(30, 41, 45, 0.60);
+    --europe-col: #a2b21b;
+    --north-america-col: #0fac4a;
+    --south-america-col: #9f74ec;
+    --antarctica-col: #00d2ff;
+    --asia-col: #ff5891;
+    --africa-col: #e18321;
+    --australia-col: #efc932;
+    --hover-opacity: 0.6;
+
+    /* Schriften */
+    --barlow-condensed: 'Barlow Condensed', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    --barlow: 'Barlow', Tahoma, Geneva, Verdana, sans-serif;
+    --smooch: 'Smooch', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    --fw-500: 500;
+    --fw-600: 600;
+    --fw-700: 700;
+}

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <meta name="description"
+        content="Diese Plattform widmet sich dem Umweltschutz und Naturschutz weltweit. Wir setzen uns dafür ein, Menschen über Umweltthemen aufzuklären, inspirierende Geschichten zu teilen und praktische Schritte für einen nachhaltigeren Lebensstil anzubieten. Unser Ziel ist es, die Artenvielfalt zu schützen, den Klimawandel zu bekämpfen und eine nachhaltige Zukunft zu gestalten.">
+    <meta name="keywords"
+        content="Umweltschutz, Naturschutz, Artenvielfalt, Klimawandel, Nachhaltigkeit, Umweltbewusstsein, Naturschutzprojekte, Gemeinschaft, Umweltthemen, Nachhaltiger Lebensstil, Umweltschutzplattform">
+    <meta name="author" content="Planet Earth e.V.">
+    <link rel="icon" type="image/x-icon" href="/img/favicon.png">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="/font-awesome/fontawesome-free-6.4.2-web/css/all.css">
+    <!-- styles -->
+    <link rel="stylesheet" href="/css/nav.css">
+    <link rel="stylesheet" href="/css/sections.css">
+    <!-- Diese css-Datei haben wir in der Lerngruppe nicht erstellt. Sie definiert die ganzen verschiedenen Grids für die Kontinent-Unterseiten. -->
+    <!-- <link rel="stylesheet" href="/css/grids.css"> -->
+    <link rel="stylesheet" href="/css/root.css">
+    <link rel="stylesheet" href="/css/fonts.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- Counter https://codepen.io/csPoint/pen/vYBxdBJ -->
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script> -->
+</head>
+
+<body>
+    <header>
+        <div class="hero h-afrika">
+            <!-- Navigation / Logo -->
+            <div class="container flex space-between">
+                <a href="index.html"><img src="/img/logos/logo-light.png" alt=""></a>
+                <nav>
+                    <ul>
+                        <li><a href="afrika.html" class="active">Afrika</a></li>
+                        <li><a href="antarktis.html">Antarktis</a></li>
+                        <li><a href="asien.html">Asien</a></li>
+                        <li><a href="australien.html">Australien</a></li>
+                        <li><a href="europa.html">Europa</a></li>
+                        <li><a href="nordamerika.html">Nordamerika</a></li>
+                        <li><a href="suedamerika.html">Südamerika</a></li>
+                        <li><a href="mach-mit.html">Mach mit</a></li>
+                        <li><a href="kontakt.html">Kontakt</a></li>
+                    </ul>
+                </nav>
+                <span class="hamburger" onclick="openNav()">&#9776;</span>
+            </div>
+            <!-- Hamburger Menü / Mobil -->
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <a href="afrika.html" onclick="closeNav()">Afrika</a>
+                    <a href="antarktis.html" onclick="closeNav()">Antarktis</a>
+                    <a href="asien.html" onclick="closeNav()">Asien</a>
+                    <a href="australien.html" onclick="closeNav()">Australien</a>
+                    <a href="europa.html" onclick="closeNav()">Europa</a>
+                    <a href="nordamerika.html" onclick="closeNav()">Nordamerika</a>
+                    <a href="suedamerika.html" onclick="closeNav()">Südamerika</a>
+                    <a href="mach-mit.html" onclick="closeNav()">Mach mit</a>
+                    <a href="kontakt.html" onclick="closeNav()">Kontakt</a>
+                </div>
+            </div>
+            <!-- Afrika Hero Slogan -->
+            <div class="container">
+                <div class="hero-slogan">
+                    <h3 class="africa-col">kontrastreiches</h3>
+                    <h1>Afrika</h1>
+                    <p>Afrika ist ein Kontinent der Kontraste. Von der Sahara-Wüste bis zu den üppigen Regenwäldern des
+                        Kongobeckens bietet Afrika eine enorme landschaftliche Vielfalt. Die reiche Tierwelt, darunter
+                        Elefanten, Löwen und Giraffen, macht Afrika zu einem beeindruckenden Kontinent.</p>
+                    <a href="#arten" class="btn bg-africa-col">erfahre mehr</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- Einleitungstext -->
+        <div class="center mt-4" id="arten">
+            <h3 class="africa-col">prächtige</h3>
+            <h2>Artenvielfalt</h2>
+        </div>
+        <div class="container flex flex-2 card-afrika mt-4">
+            <div class="bg-africa-col">
+                <img src="/img/icons/africa.svg" alt="">
+            </div>
+            <div class="bg-dark-transparent">
+                <h3 class="africa-col">Afrika</h3>
+                <p class="mt-2">Afrika ist der Kontinent, auf dem die Tierwelt in ihrer ganzen Pracht gedeiht. Die
+                    Savannen des
+                    Serengeti-Nationalparks sind berühmt für ihre Tierwanderungen, bei denen Gnuherden, Zebras und
+                    Raubtiere wie Löwen und Leoparden aufeinandertreffen. Afrika beherbergt auch majestätische
+                    Elefanten, Nashörner und Giraffen. In den tropischen Regenwäldern des Kongobeckens leben seltene
+                    Arten wie der Berggorilla und der Bonobo.</p>
+            </div>
+            <div>
+                <img src="/img/cards/afrika/fliederbrustroller-card.jpg" alt="" class="img-fluid">
+            </div>
+        </div>
+
+        <!-- Fakten -->
+        <div class="center mt-4">
+            <div>
+                <h3 class="africa-col">die Welt in</h3>
+                <h2>Zahlen</h2>
+            </div>
+        </div>
+        <div>
+            <div class="container grid gap explore count mt-4">
+                <div class="c-item bg-dark-transparent">
+                    <i class="fa-solid fa-people-group fa-2xl"></i><br>
+                    <p class="africa-col"><span class="zahl">1300 </span><sup>&nbsp; Mio.</sup></p>
+                    <p class="c-title">Bevölkerung</p>
+                </div>
+                <div class="c-item bg-dark-transparent">
+                    <i class="fa-solid fa-earth-africa fa-2xl"></i><br>
+                    <p class="africa-col"><span class="zahl">30.37 </span><sup>&nbsp; Mio. qm</sup></p>
+                    <p class="c-title">Fläche</p>
+                </div>
+                <div class="c-item bg-dark-transparent">
+                    <i class="fa-solid fa-hippo fa-2xl"></i><br>
+                    <p class="africa-col"><sup>+&nbsp; </sup><span class="zahl">100000 </span></p>
+                    <p class="c-title">Arten</p>
+                </div>
+                <div class="c-item bg-dark-transparent">
+                    <i class="fa-solid fa-paw fa-2xl"></i><br>
+                    <p class="africa-col"><sup>>&nbsp; </sup><span class="zahl">1000 </span></p>
+                    <p class="c-title">bedrohte Arten</p>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Bildergalerie -->
+        <div class="afrika-hg">
+            <div class="container center mt-4">
+                <h3 class="africa-col">vielfältige</h3>
+                <h2>Arten</h2>
+            </div>
+            <div class="container grid gallery mt-2 africa-col">
+                <div class="af-item1">
+                    <div>
+                        <video src="/media/loewen.mp4" class="video" controls muted loop></video>
+                    </div>
+                </div>
+                <div class="af-item2">
+                    <div>
+                        <h4>Afrika</h4>
+                    </div>
+                </div>
+                <div class="af-item3">
+                    <div>
+                        <h4>Fliederbrustroller</h4>
+                    </div>
+                </div>
+                <div class="af-item4">
+                    <div>
+                        <h4>Gazelle</h4>
+                    </div>
+                </div>
+                <div class="af-item5">
+                    <div>
+                        <h4>Löwe</h4>
+                    </div>
+                </div>
+                <div class="af-item6">
+                    <div>
+                        <h4>Pavian</h4>
+                    </div>
+                </div>
+                <div class="af-item7">
+                    <div>
+                        <h4>Zebra</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Wissenswertes -->
+        <div class="container mt-4 flex ue-fakten">
+            <div class="center">
+                <h3 class="africa-col">wissenswertes über</h3>
+                <h2>Afrika</h2>
+            </div>
+            <div>
+                <img src="/img/cards/afrika/gazelle-card.jpg" alt="" class="img-round">
+            </div>
+            <div>
+                <ul>
+                    <li><strong class="africa-col">Artenvielfalt</strong>
+                        <p>Afrika ist bekannt für seine reiche
+                            Tierwelt, darunter
+                            Elefanten, Löwen, Nashörner und Geparden. Es beherbergt auch eine Vielzahl von Vogel-
+                            und
+                            Pflanzenarten.</p>
+                    </li>
+                    <li><strong class="africa-col">Bevölkerung</strong>
+                        <p>Afrika hat eine Bevölkerung von über 1,3
+                            Milliarden
+                            Menschen
+                            und ist der zweitbevölkerungsreichste Kontinent.</p>
+                    </li>
+                    <li><strong class="africa-col">Kontinentalgröße:</strong>
+                        <p>Afrika erstreckt sich über eine
+                            Fläche von etwa 30,37
+                            Millionen Quadratkilometern.</p>
+                    </li>
+                    <li><strong class="africa-col">Bedrohte Arten: </strong>
+                        <p>In Afrika sind viele Tierarten
+                            gefährdet, darunter der
+                            afrikanische Elefant und der Spitzmaulnashorn.</p>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <!-- contact -->
+        <div class="contact c-afrika flex mt-4">
+            <div class="center c-slogan">
+                <h3 class="africa-col">Mach den ersten Schritt</h3>
+                <h2>Werde aktiv für die Natur!</h2>
+                <a href="mailto:mail@e-mail.de" class="btn bg-africa-col">Schreib uns</a>
+            </div>
+        </div>
+    </main>
+    <footer class="gap grid footer-grid">
+        <img src="img/logos/logo-light.png" alt="">
+        <div>
+            <h2>Kontakt</h2>
+            <p>Beautiful Planet Earth <br>
+                Landschaftsgärten 1<br>
+                1234 Erde<br></p>
+            <a href="mailto:contact@info.com">contact@info.com</a><br>
+            <a href="tel:123456789">123-456-789</a>
+        </div>
+        <div>
+            <h2>Navigation</h2>
+            <a href="index.html">Home</a><br>
+            <a href="kontakt.html">Kontakt</a><br>
+            <a href="mach-mit.html">Mach mit</a><br>
+            <a href="datenschutz.html">Datenschutz</a><br>
+            <a href="impressum.html">Impressum</a>
+        </div>
+        <div>
+            <h2>Veranstaltungen</h2>
+            <a href="#events">nachhaltige Zukunft</a><br>
+            <a href="#events">gemeinsam für die Umwelt</a><br>
+            <a href="#events">Umweltschutz in Aktion</a><br>
+            <div class="icons">
+                <a href="#">
+                    <i class="fa-brands fa-facebook fa-lg"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-instagram fa-lg"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-twitter fa-lg"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <!-- JavaScript -->
+    <script>
+        //Nav
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+        //Counter https://codepen.io/csPoint/pen/vYBxdBJ
+        $(".zahl").counterUp({ time: 4000 });
+    </script>
+</body>
+
+</html>

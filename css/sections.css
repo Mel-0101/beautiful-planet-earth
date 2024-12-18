@@ -1,0 +1,805 @@
+/* - - - - - - - - Header - - - - - - - - */
+.hero {
+    min-height: 90vh;
+    padding-top: 1rem;
+    padding-bottom: 5rem;
+    background-size: cover;
+}
+
+.hero-slogan {
+    margin-top: 12%;
+    padding: 2rem;
+    width: 600px;
+}
+
+
+@media screen and (width<=992px) {
+    .hero-slogan {
+        max-width: 350px;
+    }
+
+    .hero {
+        min-height: 60vh;
+    }
+}
+
+@media screen and (width<=600px) {
+    .hero-slogan {
+        max-width: 280px;
+    }
+}
+
+.h-home {
+    background-image: linear-gradient(180deg, var(--dark) 0%, transparent 25%, transparent 50%, var(--dark) 100%), url('../img/hintergrund/asien/elefant-asia-hg.jpg');
+    background-position: 55%;
+}
+
+.h-afrika {
+    background-image: linear-gradient(180deg, var(--dark) 0%, transparent 25%, transparent 50%, var(--dark) 100%), url('../img/hintergrund/afrika/elefant-hg.jpg');
+    background-position: 80%;
+}
+
+/* - - - - - - - - Explore-Sektion - - - - - - - - */
+.explore {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2px;
+}
+
+@media screen and (width<=992px) {
+    .explore {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* - - - - - - Fakten - - - - - - */
+.c-item {
+    border-top: 1px solid var(--light-transparent);
+    text-align: center;
+    padding: 1rem;
+}
+
+.zahl {
+    font-size: 2rem;
+}
+
+.c-title {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* - - - - - - Cards - - - - - - */
+.cards-home {
+    display: flex;
+    justify-content: center;
+
+    padding: 1.5rem;
+    height: 350px;
+    border-top: 3px solid var(--light);
+
+    color: var(--light);
+
+    background-size: 50%;
+    background-color: var(--dark-transparent);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.cards-home h6 {
+    color: var(--light);
+    transition: 0.3s;
+}
+
+.africa-home {
+    background-image: url(../img/icons/africa.svg);
+}
+
+.antarctica-home {
+    background-image: url(../img/icons/antarktis.svg);
+}
+
+.asia-home {
+    background-image: url(../img/icons/asien.svg);
+    background-size: 55%;
+}
+
+.australia-home {
+    background-image: url(../img/icons/australien.svg);
+}
+
+.europe-home {
+    background-image: url(../img/icons/europe.svg);
+}
+
+.north-america-home {
+    background-image: url(../img/icons/nordamerika.svg);
+}
+
+.south-america-home {
+    background-image: url(../img/icons/suedamerika.svg);
+}
+
+/* - - - - - - Cards:Hover - - - - - - */
+
+.cards-home:hover {
+    background-size: 65%;
+    background-color: var(--dark);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.africa-home:hover {
+    background-image: url(../img/icons/africa-hover.svg);
+    border-top: 3px solid var(--africa-col);
+
+    & h6 {
+        color: var(--africa-col)
+    }
+}
+
+.antarctica-home:hover {
+    background-image: url(../img/icons/antarktis-hover.svg);
+    border-top: 3px solid var(--antarctica-col);
+
+    & h6 {
+        color: var(--antarctica-col)
+    }
+}
+
+.asia-home:hover {
+    background-image: url(../img/icons/asien-hover.svg);
+    border-top: 3px solid var(--asia-col);
+    background-size: 70%;
+
+    & h6 {
+        color: var(--asia-col)
+    }
+}
+
+.australia-home:hover {
+    background-image: url(../img/icons/australien-hover.svg);
+    border-top: 3px solid var(--australia-col);
+
+    & h6 {
+        color: var(--australia-col)
+    }
+}
+
+.europe-home:hover {
+    background-image: url(../img/icons/europe-hover.svg);
+    border-top: 3px solid var(--europe-col);
+
+    & h6 {
+        color: var(--europe-col)
+    }
+}
+
+.north-america-home:hover {
+    background-image: url(../img/icons/nordamerika-hover.svg);
+    border-top: 3px solid var(--north-america-col);
+
+    & h6 {
+        color: var(--north-america-col)
+    }
+}
+
+.south-america-home:hover {
+    background-image: url(../img/icons/suedamerika-hover.svg);
+    border-top: 3px solid var(--south-america-col);
+
+    & h6 {
+        color: var(--south-america-col)
+    }
+}
+
+/* - - - - - - Card - Afrika - - - - - - */
+.card-afrika>div {
+    width: 33%;
+    border-top: 1px solid var(--light);
+    flex: 1 0 33%;
+}
+
+.card-afrika div:nth-child(1),
+.card-afrika div:nth-child(2) {
+    padding: 3rem;
+}
+
+
+/* - - - - - - - - Events-Sektion - - - - - - - - */
+
+
+/* ############## DARSTELLUNG zum besseren Verständnis ############### */
+/* .events {
+    background-color: #ff000011;
+}
+
+.explore-items {
+    background-color: #00ff0022;
+}
+
+.explore-items>div:nth-of-type(1) {
+    background-color: #0000ff33;
+}
+
+.explore-items>div:nth-of-type(2) {
+    background-color: #ff000044;
+}
+
+.sp-icons {
+    background-color: #00ff0055;
+}
+
+.sp-icons>div {
+    background-color: #0000ff66;
+}
+
+.explore-items>div:nth-of-type(2)>div {
+    background-color: #0000ff66;
+}
+
+.sp-icons p {
+    background-color: black;
+} */
+
+/* ################################################################### */
+
+
+
+.events {
+    /* Aktiviert flex-wrap für Vision-, Naturschutz- und Mission-Container */
+    flex-wrap: wrap;
+    /* Separiert Vision-, Naturschutz- und Mission-Container */
+
+    /* gap: 3rem; */
+
+    /* Ersetzt, damit in der Höhe keine Gap mehr ist */
+    column-gap: 3rem;
+}
+
+/* Allg. Befehle */
+
+/* Spricht Vision-, Naturschutz- und Mission-Container an. */
+.events>div {
+    /* reaktive Flex-Befehle (für das eigene Verhalten): Da in .events flex-wrap aktiv ist, bestimmen wir über die flex-basis, wann der wrap geschieht */
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 25rem;
+    /* Zu groß? Auf 1366px x Höhe sind es noch 3 Kacheln.  */
+
+    /* Styling */
+    padding: 1rem;
+
+    /* Schränkt Breite des 3. Elements ein (beim wrap) */
+    max-width: 70%;
+    /* Vermittelt 3. div-Element (beim wrap) */
+    margin: 0 auto;
+
+
+    /* aktive Flex-Befehle (für das Verhalten der direkten Nachfahren)  */
+    display: flex;
+    flex-direction: column;
+    /* obsolet? */
+    justify-content: space-between;
+
+    /* Die letzten beiden sorgen für maximale Entfernung zwischen den Elementen. Mit der neuen Verschachtelung sind es 2 div-Elemente. Jetzt sind alle Elemente auf derselben Höhe.   */
+}
+
+/* Alternativ über Klasse */
+/* .explore-items {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 20rem;
+
+    padding: 1rem;
+    background-color: #ffffff11;
+    max-width: 70%;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+} */
+
+
+
+/* Bilder in der Breite einschränken (beim ersten Umbruch) */
+/* ################################### */
+.explore-items>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.events img {
+    max-width: 75%;
+    margin-top: 2rem;
+}
+
+/* #################################### */
+
+/* Button Styling ################# */
+.events a {
+    width: 90%;
+    text-align: center;
+    margin: 2rem 0.5rem;
+}
+
+/* Alternativ über Klasse: */
+/* .btn-full {
+    width: 90%;
+    text-align: center;
+    margin: 2rem 0.5rem;
+} */
+
+/* #################################### */
+
+/* MQ, ab dieser Bildschirmbreite werden Vision-, Naturschutz- und Mission-Container über ganze Breite dargestellt. */
+/* Überschrift wird vermittelt & Außenabstand wird verringert */
+@media screen and (max-width: 768px) {
+    .events>div {
+        max-width: 100%;
+    }
+
+    .events h4 {
+        margin-top: 0;
+        text-align: center;
+    }
+}
+
+
+/* Überschrift und Fließtext etwas auseinander bringen. */
+.explore-items>div>p {
+    margin-top: 1rem;
+}
+
+/* Beachten: flex ist bereits über Klasse aktiviert */
+.sp-icons {
+    /* Reaktives Flex */
+    flex-grow: 1;
+
+    /* Aktives Flex für die 3 p-Elemente */
+    display: flex;
+    justify-content: space-between;
+    justify-content: space-around;
+
+    margin-top: 1rem;
+}
+
+/* Einfärbung der Icons */
+.sp-icons i {
+    color: var(--primary);
+}
+
+
+.sp-icons p {
+    padding: 0.5rem 1rem;
+    border-right: 1px solid var(--primary);
+    /* Icons vermitteln */
+    text-align: center;
+    /* damit Text nicht umbricht (nur relevant bei der Uhrzeit) */
+    min-width: fit-content;
+}
+
+/* div-Element, das p-Element, sp-icons & button beinhaltet */
+.explore-items>div:nth-of-type(2) {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
+/* div-Element, das sp-icons & button beinhaltet */
+.explore-items>div:nth-of-type(2)>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.btn-full {
+    align-self: center;
+}
+
+/* - - - - - - - - Slideshow - - - - - - - - */
+.slideshow-container {
+    position: relative;
+    max-width: 90%;
+    margin: 3rem auto 1rem auto;
+}
+
+.mySlides p {
+    position: absolute;
+    font-size: 3rem;
+    text-shadow: 0px 0px 6px var(--dark);
+}
+
+.numbertext {
+    top: 3%;
+    left: 2%;
+    font-family: var(--smooch);
+    letter-spacing: 5px;
+}
+
+.slideshow-text {
+    bottom: 3%;
+    font-family: var(--barlow-condensed);
+    /* Statt das Element wie gewohnt über flexboxen zu zentrieren, lösen wir die Positionierung
+dieser die Textblöcke auf eine andere Art und Weise. Wir strecken sie über die widthEigenschaft auf 100% des verfügbaren Raums und zentrieren den Textinhalt über textalign:center. */
+    /* Ein p-Element mit den Standardwerten position:static und display:block füllt automatisch die
+gesamte Breite aus. Durch die Deklaration position:absolute müssen wir hier jedoch selbst
+Hand anlegen. */
+    width: 100%;
+    text-align: center;
+}
+
+.dot {
+    display: inline-block;
+    background-color: var(--light-transparent);
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    transition: background-color 0.6s ease;
+}
+
+.dot-container .active {
+    background-color: var(--light);
+}
+
+.dot-container {
+    text-align: center;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 5s;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    85% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@media screen and (width<=600px) {
+
+    .mySlides p {
+        font-size: 1.5rem;
+    }
+}
+
+/* - - - - - - - - Bildergalerie - - - - - - - - */
+.gallery {
+    gap: 1rem;
+    padding-bottom: 3rem;
+}
+
+.gallery>div {
+    background-size: cover;
+    min-height: 50vh;
+
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+}
+
+.gallery>div:not(.af-item1) {
+    padding: 1rem;
+}
+
+
+.gallery a {
+    text-transform: uppercase;
+    font-weight: var(--fw-700);
+    letter-spacing: 2px;
+}
+
+
+.item1 {
+    background-image: linear-gradient(180deg, transparent, #0000007c), url("../img/grid/afrika/zebra.jpg");
+}
+
+.item1:hover {
+    background-image: linear-gradient(180deg, transparent, #000000c4), url("../img/grid/afrika/zebra.jpg");
+}
+
+.item2 {
+    background-image: linear-gradient(180deg, transparent, #0000007c), url("../img/grid/antarktis/pinguin-baby.jpg");
+}
+
+.item2:hover {
+    background-image: linear-gradient(180deg, transparent, #000000c4), url("../img/grid/antarktis/pinguin-baby.jpg");
+}
+
+.item3 {
+    background-image: linear-gradient(180deg, transparent, #0000007c), url("../img/grid/asien/amur-leopard.jpg");
+}
+
+.item3:hover {
+    background-image: linear-gradient(180deg, transparent, #000000c4), url("../img/grid/asien/amur-leopard.jpg");
+}
+
+.item4 {
+    background-image: linear-gradient(180deg, transparent, #0000007c), url("../img/grid/australien/kaenguru.jpg");
+}
+
+.item4:hover {
+    background-image: linear-gradient(180deg, transparent, #000000c4), url("../img/grid/australien/kaenguru.jpg");
+}
+
+.item5 {
+    background-image: linear-gradient(180deg, transparent, #0000007c), url("../img/grid/europa/wolf.jpg");
+}
+
+.item5:hover {
+    background-image: linear-gradient(180deg, transparent, #000000c4), url("../img/grid/europa/wolf.jpg");
+}
+
+.item6 {
+    background-image: linear-gradient(180deg, transparent, #0000007c), url("../img/grid/nordamerika/bison.jpg");
+}
+
+.item6:hover {
+    background-image: linear-gradient(180deg, transparent, #000000c4), url("../img/grid/nordamerika/bison.jpg");
+}
+
+.item7 {
+    background-image: linear-gradient(180deg, transparent, #0000007c), url("../img/grid/suedamerika/lamas.jpg");
+}
+
+.item7:hover {
+    background-image: linear-gradient(180deg, transparent, #000000c4), url("../img/grid/suedamerika/lamas.jpg");
+}
+
+
+@media screen and (width<576px) {
+    .gallery {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (width>=576px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .item1,
+    .af-item1 {
+        grid-column: span 2;
+    }
+}
+
+@media screen and (width>=992px) {
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .item7,
+    .af-item1,
+    .af-item7 {
+        grid-column: span 2;
+    }
+}
+
+@media screen and (width>=1200px) {
+
+    .item6 {
+        grid-column: span 2;
+    }
+
+    .item7 {
+        grid-column: span 1;
+    }
+}
+
+/* - - - - - - - - Afrika Galerie - - - - - - - - */
+
+.gallery video {
+    width: 100%;
+    height: auto;
+}
+
+.af-item2 {
+    background-image: linear-gradient(180deg, transparent, #0000007c), url("../img/grid/afrika/afrika-grid.jpg");
+}
+
+.af-item3 {
+    background-image: linear-gradient(180deg, transparent, #0000007c), url("../img/grid/afrika/fliederbrustroller.jpg");
+}
+
+.af-item4 {
+    background-image: linear-gradient(180deg, transparent, #0000007c), url("../img/grid/afrika/gazelle.jpg");
+}
+
+.af-item5 {
+    background-image: linear-gradient(180deg, transparent, #0000007c), url("../img/grid/afrika/loewenjunges.jpg");
+}
+
+.af-item6 {
+    background-image: linear-gradient(180deg, transparent, #0000007c), url("../img/grid/afrika/pavian.jpg");
+}
+
+.af-item7 {
+    background-image: linear-gradient(180deg, transparent, #0000007c), url("../img/grid/afrika/zebra.jpg");
+}
+
+
+
+/* - - - - - - - - Wissenswertes - - - - - - - - */
+
+.ue-fakten {
+    align-items: center;
+    gap: 4rem;
+}
+
+.ue-fakten ul {
+    border: 2px solid var(--light-transparent);
+    border-radius: 10px;
+    background-color: var(--dark-transparent);
+
+    padding: 2rem 3rem 0rem;
+
+    /* list-style-image: url(../img/icons/info-circle-white.svg); */
+
+    /* list-style-type: symbols("ⓘ"); */
+}
+
+.ue-fakten li {
+    margin-bottom: 1rem;
+}
+
+.ue-fakten li::marker {
+    content: 'ⓘ';
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 1rem;
+    margin: 1rem;
+    display: inline-block;
+
+}
+
+.ue-fakten li strong {
+    text-transform: uppercase;
+    font-weight: var(--fw-600);
+    margin-left: 0.3rem;
+    /* letter-spacing: 1px; */
+}
+
+
+
+/* - - - - - - - - Kontakt-Sektion - - - - - - - - */
+.contact {
+    min-height: 60vh;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-attachment: fixed;
+    /* background-position: ; */
+
+}
+
+.c-home {
+    background-image: url(../img/hintergrund/antarktis/pinguin-hero.jpg);
+    background-position: center;
+}
+
+.c-afrika {
+    background-image: url(../img/landschaften/afrika-landschaft.jpg);
+    background-position: 20%;
+}
+
+.c-slogan {
+    background-color: var(--dark-transparent);
+    padding: 2rem 3rem;
+    max-width: 60%;
+    margin: 1rem;
+    border-radius: 10px;
+}
+
+@media screen and (width<650px) {
+    .c-slogan h2 {
+        font-size: 2.25rem;
+    }
+
+    .c-slogan {
+        width: 100%;
+        max-width: max-content;
+        margin: 0;
+    }
+}
+
+
+
+/* - - - - - - - - Footer - - - - - - - - */
+
+.footer-grid {
+    margin: auto;
+    max-width: 1200px;
+}
+
+
+/* @media screen and (width<992px) {
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 3rem;
+    }
+
+    footer div:nth-child(2n) {
+        text-align: right;
+    }
+} */
+
+@media screen and (width<600px) {
+    .footer-grid {
+        grid-template-columns: repeat(1, 1fr);
+        margin: 3rem auto;
+        width: 15rem;
+    }
+
+    footer div:nth-child(1n) {
+        text-align: center;
+    }
+
+    footer .icons {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    footer .logo {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (width>=600px) and (width<992px) {
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 3rem;
+    }
+
+    footer div:nth-child(2n) {
+        text-align: right;
+    }
+
+    footer .icons {
+        justify-content: end;
+        gap: 1rem;
+    }
+}
+
+@media screen and (width>=992px) {
+    .footer-grid {
+        grid-template-columns: repeat(4, 1fr);
+        padding: 3rem 0;
+    }
+
+    footer .icons {
+        gap: 1rem;
+    }
+}
+
+footer img {
+    margin-top: 2rem;
+}
+
+footer .icons {
+    display: flex;
+}
+
+footer h2 {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
+
+footer a {
+    color: var(--light);
+}

@@ -1,0 +1,134 @@
+nav a {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: var(--fw-700);
+    font-size: 16px;
+    color: var(--light);
+    padding: 15px 0;
+    margin: 0 20px;
+}
+
+nav a:hover {
+    border-top: 1px solid;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+    margin: 0.5rem 0;
+    padding: 0;
+    float: left;
+}
+
+nav li:nth-child(1) a:hover,
+nav li:nth-child(1) .active {
+    color: var(--africa-col);
+}
+
+nav li:nth-child(2) a:hover,
+nav li:nth-child(2) .active {
+    color: var(--antarctica-col);
+}
+
+nav li:nth-child(3) a:hover,
+nav li:nth-child(3) .active {
+    color: var(--asia-col);
+}
+
+nav li:nth-child(4) a:hover,
+nav li:nth-child(4) .active {
+    color: var(--australia-col);
+}
+
+nav li:nth-child(5) a:hover,
+nav li:nth-child(5) .active {
+    color: var(--europe-col);
+}
+
+nav li:nth-child(6) a:hover,
+nav li:nth-child(6) .active {
+    color: var(--north-america-col);
+}
+
+nav li:nth-child(7) a:hover,
+nav li:nth-child(7) .active {
+    color: var(--south-america-col);
+}
+
+.hamburger {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Overlay */
+.overlay {
+    height: 100%;
+    width: 0;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    z-index: 2;
+
+    background-image: url("../img/icons/favicon.png");
+    background-repeat: no-repeat;
+    background-position: 10% 90%;
+
+    background-color: var(--dark);
+
+    transition: 0.5s;
+}
+
+.overlay a {
+    padding: 8px;
+    font-size: 1.5rem;
+    display: block;
+
+    color: var(--light);
+    transition: 0.3s;
+}
+
+.overlay a:hover {
+    color: var(--primary);
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 0%;
+    right: 25px;
+    font-size: 60px;
+}
+
+@media screen and (height<=450px) {
+    .overlay a {
+        font-size: 20px;
+    }
+
+    .closebtn {
+        top: 15px;
+        right: 35px;
+    }
+}
+
+@media screen and (width<=992px) {
+    nav {
+        display: none;
+    }
+}
+
+@media screen and (width>992px) {
+    .hamburger {
+        display: none;
+    }
+}
