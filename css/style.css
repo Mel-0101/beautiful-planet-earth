@@ -270,6 +270,10 @@ h6 {
     align-items: center;
 }
 
+.justify-content-center {
+    justify-content: center;
+}
+
 .gap {
     gap: 1rem;
 }

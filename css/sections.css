@@ -603,9 +603,16 @@ Hand anlegen. */
 
 /* - - - - - - - - Afrika Galerie - - - - - - - - */
 
-.gallery video {
+.af-item1 {
+    position: relative;
+}
+
+video {
     width: 100%;
-    height: auto;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    object-fit: cover;
 }
 
 .af-item2 {
@@ -648,31 +655,41 @@ Hand anlegen. */
 
     padding: 2rem 3rem 0rem;
 
+    list-style-type: '\1F6C8';
+
     /* list-style-image: url(../img/icons/info-circle-white.svg); */
 
-    /* list-style-type: symbols("ⓘ"); */
+    /* list-style-type: symbols("\1F6C8"); */
+    /* list-style-type: symbols("../img/icons/info-circle-white.svg"); */
 }
 
 .ue-fakten li {
     margin-bottom: 1rem;
 }
 
+
 .ue-fakten li::marker {
-    content: 'ⓘ';
+    font-size: 1.5rem;
+}
+
+/* .ue-fakten li::marker {
+    content: 'ⓘ'; 
+    content: '\1F6C8'; 
     font-size: 1.1rem;
-    font-weight: bold;
+     font-weight: bold; 
     padding: 1rem;
     margin: 1rem;
     display: inline-block;
-
-}
+} */
 
 .ue-fakten li strong {
     text-transform: uppercase;
-    font-weight: var(--fw-600);
     margin-left: 0.3rem;
-    /* letter-spacing: 1px; */
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    font-family: var(--barlow-condensed);
 }
+
 
 
 
@@ -789,6 +806,7 @@ Hand anlegen. */
 
 footer img {
     margin-top: 2rem;
+
 }
 
 footer .icons {
